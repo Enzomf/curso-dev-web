@@ -1,0 +1,88 @@
+html {
+    background-color: black;
+    height: 100%;
+overflow: hidden;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%; 
+}
+
+
+
+@font-face {
+    font-family: 'Calculator' ;
+    src: url(Calculator.ttf);
+}
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #corpo {
+        width: 250px;
+        height: 300px;
+        border: solid black 1px;
+        box-sizing: border-box;
+        padding: 15px;
+        border-radius: 10px;
+        background-color: rgb(20, 20, 20);
+    }
+
+    #visor {
+        width: 100%;
+        border:#424141 solid 1px;
+        height: 40px;
+        font-family: 'Calculator';
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 5px;
+       
+        margin-bottom: 10px;
+        background-color: #161616;
+        font-size: 30px;
+        color: green;
+    }
+
+
+
+    #teclado {
+       
+        height: 82%;
+    }
+
+    #teclado table {
+       
+        width: 100%;
+        height: 100%;
+        border-collapse: collapse;
+    }
+
+    #teclado td, tr {
+       
+        padding: 0px;
+        
+    }
+
+    .botão {
+      
+        font-family: "Calculator";
+        font-size: 20px;
+        width: 100%;
+        height: 100%;
+        border:#424141 solid 1px;
+        background-color: #161616;
+        color: green;
+        font-weight: 200;
+    }
+
+    button:hover {
+        background-color: black;
+    }

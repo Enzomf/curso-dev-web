@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title> Cadastro de Nomes </title>
+
+    <script src = "pesquisa.js"></script>
+
+</head>
+
+<body>
+
+    <div id="container">
+        <main>
+
+            <fieldset > 
+
+                <h2>Cadastro de produtos</h2>
+                
+                <label for="Produto">Produto</label>
+                <input onkeypress="caractere()" type="text" id="produto" name="Produto" required>
+                
+                <label for="quantidade">Quantidade</label>
+                <input type="number" id="quantidade" name="quantidade" value="0" required>
+                
+                <label for="quantidade">Preço:</label>
+                <input type="number" id="preco" name="preco" placeholder="em reais" required>
+
+                
+                <button id="cadastrar" onclick="cadastro()" id ="enviar" >Cadastrar</button>
+
+                <p id = "mensagem"> </p>
+
+            </fieldset>
+
+            <fieldset > 
+
+                <h2>Pesquisa de produtos</h2>
+                
+                <input type="search" name="pesquisa" id="pesquisa">
+                <button onclick="pesquisa()" type="button" id ="pesquisar">Pesquisar</button>
+                
+               <div>
+                   <h2 id ="cabeçalhoPesquisa"></h2>
+                   <p id ="precoPesquisa"></p>
+                   <p id = 'quantidade1'></p>
+                   
+               </div>
+
+            </fieldset>
+        </main>
+    </div>
+</body>
+
+</html>

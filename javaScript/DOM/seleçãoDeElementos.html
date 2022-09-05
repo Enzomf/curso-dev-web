@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Seleção de elementos</title>
+
+  
+
+</head>
+<body>
+    <input onfocus = "selecionado()" type = "text" placeholder = "digite seu nome" id ="nomeUsuario" name ="nome" class = "campoTexto" >
+
+    <script>
+        // getElementById() -> seleciona um elemento de acordo com o seu id
+        // getElementsByTagName() -> seleciona todos as tag especificadas
+        // getElementsByClassName() -> selecionda todos os elementos com uma classe especifica
+        // getElementsByName() -> seleciona todos os elementos com um nome específi
+      
+      function selecionado() {
+        document.getElementById("nomeUsuario").style = "border: red  solid 2px"
+      }  
+
+
+    </script>
+
+</body>
+</html>

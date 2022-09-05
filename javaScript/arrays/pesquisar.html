@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script>
+      
+      var lista = Array()
+
+      lista[0] = 'Banana'
+      lista[1] = 'Uva'
+      lista[2] = 'Maça'
+
+    function Pesquisa(){
+
+      var elemento =   document.getElementById('pesquisa').value
+        console.log(elemento)
+
+        // indexOf irá retornar -1 caso o elemento procurado não exista
+    if (lista.indexOf(elemento) === -1){
+
+       document.getElementById('resultado').innerHTML = 'Elemento não existe'
+
+    }else {
+        document.getElementById('resultado').innerHTML = 'Elemento está na posição ' + lista.indexOf(elemento)
+        
+    }
+    }
+    
+    </script>
+</head>
+<body>
+
+    <input type ='search' id = "pesquisa">
+    <button onclick  = "Pesquisa()"> pesquisar</button>
+
+    <div id = "resultado"> </div>
+    
+</body>
+</html>

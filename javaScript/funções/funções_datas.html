@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>Funções nativas - String</title>
+
+
+        <script>
+
+            // // é necesario realizar a criação de uma novainstancia
+            // data = new Date();
+
+            
+            // document.write("<div style ='border: black solid 1px; padding:10px; margin: 0 0 25px '>")
+            // document.write("<h1> atributo Get </h1>")
+            // document.write(data.getDate()+"/")
+            // document.write(data.getMonth() +1 + "/")
+            // document.write(data.getFullYear())
+            // document.write("</div>")
+            
+            // // adicionar / remover dias
+
+            // document.write("<h5>Data normal</h5>")
+            // document.write(data.toString())
+            
+            // data.setDate(data.getDate()+1 )
+            // document.write("<h5>Data alterada</h5>")
+            // document.write(data)
+
+            // // adicionar / remover meses
+
+            // document.write("<h5>mes normal</h5>")
+            // document.write(data.toString())
+            
+            // data.setMonth(data.getMonth()+1 )
+            // document.write("<h5>mes alterada</h5>")
+            // document.write(data)
+
+
+             //calculo dias
+
+             var data1 = new Date(2017,5,1)
+             var data2 = new Date(2020, 9, 15)
+
+             document.write(data1.toString())
+             document.write('<hr />')
+             document.write(data2.toString())
+             document.write('<hr />')
+             //conversão das datas para algo cauculável
+             document.write(data1.getTime())
+             document.write('<hr />')
+             document.write(data2.getTime())
+             document.write('<hr />')
+             // 1 de janeiro de 1970 como referencia
+
+             // encontrar  a quantidade de milissegundos entre a primeira data e a segunda
+
+              var milissegundosPorDia = (1*24*60*60*1000)
+              var diferenca = Math.abs(data1.getTime() - data2.getTime())
+             
+             document.write(Math.abs(data1.getTime() - data2.getTime())) 
+             document.write('<hr />')
+             document.write("um dia tem: " + milissegundosPorDia )
+             document.write('<hr />')
+             document.write("Diferença entre essas datas é de "+ Math.ceil(diferenca/milissegundosPorDia) + " dia(s)")
+        </script>
+    </head>
+
+    <body>
+
+    </body>
+</html>

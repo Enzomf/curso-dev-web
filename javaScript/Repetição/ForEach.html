@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array</title>
+
+    <script>
+
+        let listaFuncionarios = Array("Jonas", "Marcos", "Chunda", "Marquinhos")
+        
+        // funciona apenas com numero maiores ou iguais a 0
+        listaFuncionarios.forEach(function(valor, indice, array){
+            console.log('indice: ' + indice + '| valor: ' + valor)
+
+            if(valor == "Marcos") {
+                array[indice] = "Novo nome"
+            }
+
+            console.log(array)
+
+        })
+        // Função do objeto Array, percorrendo cada um dos elementos de um Array
+    </script>
+</head>
+<body>
+   
+    
+</body>
+</html>

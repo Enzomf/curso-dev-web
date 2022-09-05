@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title> Eventos - Mouse</title>
+
+        <script> 
+        // onclick -> realiza uma ação quando o usuário clica sobre algum elemento
+
+        //ondblclick -> realiza uma ação quando o usuário clica duas vezes sobre algum elemento
+
+        //onmouseup -> realiza uma ação quando o botão do mause é liberado
+
+        //onmouseover -> quando o cursor passa por cima do elemento
+
+        //onmouseout -> quando o cursor sai de determinada área
+
+        function acao() {
+            alert('Evento disparado')
+        }
+
+        
+        
+        </script>
+    </head>
+
+    <body>
+        <div onclick = "acao()"style ="background: #CCC; height: 250px; width: 250px; float: left"> 
+            <h1>Onclick</h1>
+        </div>
+        <div ondblclick = "acao()"style ="background: red ;height: 250px; width: 250px; float: left"> 
+            <h1>Ondblclick</h1>
+        </div>
+        <div onmouseup = "acao()"style ="background: blue ;height: 250px; width: 250px; float: left"> 
+            <h1>Onmouseup</h1>
+        </div>
+        <div onmouseover = "acao()"style ="background: violet ;height: 250px; width: 250px; float: left"> 
+            <h1>Onmouseover</h1>
+        </div>
+
+        <div onmouseout = "acao()"style ="background: yellowgreen ;height: 250px; width: 250px; float: left"> 
+            <h1 >Onmouseout</h1>
+        </div>
+    </body>
+
+
+
+</html>

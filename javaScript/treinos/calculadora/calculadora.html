@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+
+    <link rel = "stylesheet" href="estilo.css">
+
+    <script src ="calculadora.js"></script>
+</head>
+<body>
+
+    <main>
+        <div id = "corpo">
+            <div id ="visor"> 
+                
+            </div>
+
+            <div id ="teclado">
+                <table>
+                    <tr>
+                        <td><button class = "botão" onclick="apagarTudo()"> C</button></td>
+                        <td><button class = "botão" onclick="apagar()"> < </button></td>
+                        <td><button class = "botão" onclick="captura('/')"> /</button></td>
+                        <td><button class = "botão" onclick="captura('*')"> X </button></td>
+                    </tr>
+                    <tr>
+                        <td><button class = "botão" onclick="captura('7')"> 7</button></td>
+                        <td><button class = "botão" onclick="captura('8')"> 8 </button></td>
+                        <td><button class = "botão" onclick="captura('9')"> 9</button></td>
+                        <td><button class = "botão" onclick="captura('-')"> - </button></td>
+                    </tr>
+                    <tr>
+                        <td><button class = "botão" onclick="captura('4')"> 4</button></td>
+                        <td><button class = "botão" onclick="captura('5')"> 5 </button></td>
+                        <td><button class = "botão" onclick="captura('6')"> 6</button></td>
+                        <td><button class = "botão" onclick="captura('+')"> + </button></td>
+                    </tr>
+                    <tr>
+                        <td><button class = "botão" onclick="captura('1')"> 1</button></td>
+                        <td><button class = "botão" onclick="captura('2')"> 2 </button></td>
+                        <td><button class = "botão" onclick="captura('3')"> 3</button></td>
+                        <td rowspan="2"><button class = "botão" onclick="calcular()"> = </button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button class = "botão" onclick="captura('0')"> 0</button></td>
+                        <td><button class = "botão" onclick="captura('.')"> . </button></td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>

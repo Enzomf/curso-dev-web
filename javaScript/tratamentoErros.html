@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>casting</title>
+
+    <script>
+     
+         var video = Array()
+
+        video[1] = Array()
+        video[1]["nome"] = "Better Call Saul"
+        video[1]["categoria"] = "Drama / Policial"
+
+
+     function getVideo(video) {
+        
+        try{
+
+        console.log(video[0]['nome'])
+
+        }
+        catch(erro){ 
+              // parametro onde o erro que aconteceu é "armazenado"  
+              // se der o erro, o que fazer ? (parte onde o erro é tratado)
+            console.log("Video indisponível, i think is Better Call Saul rsrs")
+            console.log(erro) // escreve o erro acontecido no console
+        }
+        
+        finally{ // depois de ter feito algo ou não, como proceder ? (sempre passa por aqui)
+         console.log("Redirecionando para outra aba")
+        }
+
+        console.log("A aplicação não morreu ;)")
+     }
+
+     console.log(getVideo(video))
+
+   </script>
+</head>
+
+
+<body>
+
+</body>
+
+
+</html>

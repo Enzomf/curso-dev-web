@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title> Eventos - Mouse</title>
+
+        <script> 
+      
+     // onfocus -> quando o formulário recebe o foco
+     // onblur -> quando o formulário perde o foco
+     // onchange -> quando o estado do elemento é modificado
+
+
+
+
+
+
+        function acao() {
+            console.log('Evento disparado')
+        }
+     
+        
+        
+        </script>
+    </head>
+
+    <body>
+        <input onfocus="acao()" type = "text" placeholder="onfocus"> <br>
+        <input onblur = "acao() " type = "text" placeholder="onblur"> <br>
+        
+        <select onchange="acao()">
+            <option> ----- Selecione ------</option>
+            <option value = "1">Primeira opção </option>
+            <option value = "2">Segunda  opção </option>
+        </select>
+
+
+    </body>
+
+
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title> Eventos - Mouse</title>
+
+        <script> 
+        
+        // onkeydown -> tecla pressionada
+        //onkeyup -> tecla liberada
+        //onkeypress -> instante quando se mantem a tecla é pressionada (só funciona com teclas de caractere)
+
+        function acao() {
+            alert('Evento disparado')
+        }
+
+        
+        
+        </script>
+    </head>
+
+    <body>
+        <input onkeydown="acao()" type = "text" id = "onkeydown" placeholder="onkeydown">
+
+        <input onkeyup="acao()" type = "text" id = "onkeyup" placeholder="onkeydown">
+        <input onkeypress="acao()" type = "text" id = "onkeypress" placeholder="onkeypress">
+    </body>
+.
+
+
+</html>

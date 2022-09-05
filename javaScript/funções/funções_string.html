@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>Funções nativas - String</title>
+
+
+        <script>
+
+            var nome = 'Enzo Morais Figueiredo'
+            
+            document.write("<b>Referência: </b>" + nome)
+            
+            // propriedade length  -> retonra a quantidade de caracteres de uma string
+            document.writeln("<div style = 'margin-top:10px'> Quantidade de caracteres: <b> "+ nome.length + "</b> </div>") //contagem iniciada pelo 0 <> espaço também conta
+
+            // charAt() -> retorna o caracter armazenado em determinado indice
+            document.writeln("<div> Caractere da posição 12:<b> " + nome.charAt(12) + "</b> </div>")
+
+            // index.Of() -> indica a primeira ocorrencia de determinado caractere (case sensitive)
+            document.write("<div> Posição do caractere:<b> " + nome.indexOf("o") + "</b> </div>")
+
+            // replace() -> Substitui uma cadeia de caracteres por outra (primeiro parametro pelo segundo)
+            document.write("<div> <b> Substituição de Enzo por Jonas: </b>"+nome.replace('Enzo', 'Jonas') + "</div>")
+
+            // sbstr() -> extrai determinada parte de uma string com base nos parametros (primeiro sendo o início e segundo quantas posições a mais para frente serão extraidas)
+            document.write("<div><b>Extração de uma determinada parte da string: <b/>"+nome.substr(5,7) + "</div>s")
+             
+            // toLowerCase -> converte a string para letras minusculas
+
+            // toUpperCase -> converte a string para letras maiúscuals
+
+            // .trim -> remove os espaços das estremidades da String
+            document.write(nome.trim)
+            
+
+
+
+        </script>
+    </head>
+
+    <body>
+
+    </body>
+</html>

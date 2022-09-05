@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Adicionar / ordenar no Array</title>
+
+<script>
+
+    var itens = Array('Cadeira', 'Impressora', 'Garfo')
+
+    function adicionar() {
+
+        var item = document.getElementById("barraPesquisa").value
+
+       if(item.length == 0){
+           alert("Valor invalido")
+       }else{
+          var controle = itens.indexOf(item)
+
+          if (controle == -1){
+              itens.push(item)
+              console.log(itens)
+              document.getElementById('barraPesquisa').value = ""
+          }else{
+              console.log("Item já registrado")
+              document.getElementById('barraPesquisa').value = ""
+          }
+       }     
+    }
+
+    function ordenar() {
+       
+        console.log(itens.sort())
+
+    }
+
+
+</script>
+
+
+</head>
+
+
+
+<body>
+    <input type ="search" id ="barraPesquisa"> 
+    <button id ="adicionar" onclick="adicionar()">Adicionar</button>
+    <button id ="ordenar" onclick="ordenar()">Ordenar</button>
+</body>
+</html>

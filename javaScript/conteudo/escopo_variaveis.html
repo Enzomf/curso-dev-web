@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ESCOPO DAS VARIÁVEIS</title>
+
+    <script>
+        // GLOBAL: podem ser acessadas em qualquer função ou bloco 
+        var serie = "Better Call Saul"
+
+        function series(){
+            document.write(serie) // variável global sendo acessada dentro de uma função
+        }
+
+       
+
+        if (true){
+            document.write(serie) //variável sendo acessada dentro de um bloco
+            document.write('<br>')
+        }
+
+        series() 
+    
+        // FUNÇÃO: Só podem ser acessadas dentro do escopo da função em que ela foi declarada
+
+        function filme (){
+            var cinema = "avatar" //variável fica disponível somente no escopo dessa função
+        }
+
+        // BLOCO: Só podem ser acessadas dentro do escopo do bloco em que foram declaradas (if, else, else if)
+
+
+        if (true){
+            var plataforma = 'netflix' //variável sofre uma elevação para global (roisting)
+        }
+
+        
+
+   </script>
+</head>
+<body>
+    
+</body>
+</html>

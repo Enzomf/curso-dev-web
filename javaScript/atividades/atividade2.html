@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset ="UTF-8">
+        <title>Atividade 1</title>
+
+        <script>
+        
+
+            var nome = prompt("Digite seu nome: ")
+            var altura = parseFloat(prompt("Digite sua altura em cm: "))
+            var peso = parseFloat(prompt("Agora o seu peso: "))
+
+            altura = altura / 100
+
+            var  imc = peso / (altura^2)
+
+            if (imc < 16){
+               document.write(nome + " possui o índice de massa corporal igual a <b> " + imc.toFixed(2) + "</b>, sendo classificado como <span style = 'color:red;'> Baixo Peso muito grave</span>")
+            }
+
+            else if (imc >=16 && imc <= 16.99) {
+                document.write(nome + " possui o índice de massa corporal igual a <b> " + imc.toFixed(2) + "</b>, sendo classificado como <span style = 'color:red;'> Baixo Peso grave</span>")
+            }
+
+            else if (imc > 16.99 && imc <= 18.49){
+                document.write(nome + " possui o índice de massa corporal igual a <b> " + imc.toFixed(2) + "</b>, sendo classificado como <span style = 'color:red;'> Baixo Peso </span>")
+            }
+            else if (imc > 18.49 && imc <= 24.99){
+                document.write(nome + " possui o índice de massa corporal igual a <b> " + imc.toFixed(2) + "</b>, sendo classificado como <span style = 'color:red;'> Peso normal</span>")
+            }
+
+            else if (imc > 24.99 && imc <= 29.99){
+                document.write(nome + " possui o índice de massa corporal igual a <b> " + imc.toFixed(2) + "</b>, sendo classificado como <span style = 'color:red;'> Sobrepeso</span>")
+            }
+
+            else if (imc > 29.99 && imc <=34.99){
+                document.write(nome + " possui o índice de massa corporal igual a <b> " + imc.toFixed(2) + "</b>, sendo classificado como <span style = 'color:red;'> Obesidade I</span>")
+            }
+            else if (imc > 34.99 && imc <=39.99){
+                document.write(nome + " possui o índice de massa corporal igual a <b> " + imc.toFixed(2) + "</b>, sendo classificado como <span style = 'color:red;'> Obesidade II</span>")
+            }
+
+            else {
+                document.write(nome + " possui o índice de massa corporal igual a <b> " + imc.toFixed(2) + "</b>, sendo classificado como <span style = 'color:red;'> Obesidade grau III</span>")
+            }
+
+        </script>
+    </head>
+
+    <body>
+
+    </body>
+
+
+</html>

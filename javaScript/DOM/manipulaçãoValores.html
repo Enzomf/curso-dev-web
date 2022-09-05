@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title> 
+    <script>
+
+        function captura(){
+
+         var valor = document.getElementById('principal').value
+         document.getElementById('principal').value =""
+         document.getElementById('letra').value =""
+         document.getElementById('numero').value =""
+         document.getElementById("numero").style =" "
+         document.getElementById("letra").style =" "
+         valor.trim()
+
+         console.log(valor)
+
+         switch(valor){
+             case '0':
+             case "1":
+             case "2":
+             case "3":
+             case "4":
+             case "5":
+             case "6":
+             case "7":
+             case "8":
+             case "9":
+            
+             document.getElementById("numero").value =  valor
+             document.getElementById("numero").style ="background: violet ; "
+
+             break;
+             default: document.getElementById("letra").value = valor
+             document.getElementById("letra").style ="background: violet ; "
+         }
+         
+        }
+
+      
+
+       </script>
+
+       <style>
+           input {
+               margin: 10px 0;
+               display: block;
+           }
+
+           #botao {
+               width: 50px;
+           }
+
+       </style>
+</head>
+<body>
+
+
+    <input type = "text" id = "principal" placeholder="Digite o caractere aqui"> 
+   
+
+    <input type ="button" id = "botao" onclick="captura()" value ="Enviar">
+    
+   Letra:
+    <input type = "text" id = "letra"  disabled>
+      Numero:
+    <input type = "text" id = "numero" disabled>
+
+</body>
+</html>

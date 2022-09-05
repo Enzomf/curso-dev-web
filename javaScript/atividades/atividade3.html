@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>Atividade 3</title>
+
+        <script>
+
+            // função que realiza os calculos 
+            function calculadora(numero1, numero2, operacao){
+                if (operacao == 'soma' || operacao == "Soma" || operacao == "SOMA" || operacao == "+"){
+                    soma =  numero1 + numero2
+
+                  return soma
+                }
+
+                else if(operacao || "subtração" || operacao || "Subtração" || operacao == "SUBTRAÇÃO"  || operacao == "subtracao" || operacao == "subtraçao"|| operacao == "-"  ) {
+                    subtracao = numero1 - numero2
+
+                    return subtracao
+                }
+            }
+
+           
+
+             var numero1 = parseFloat(prompt(("Digite o primeiro numero: ")))
+
+             var operacao = prompt(("Digite a operação: "))
+            
+
+             var numero2 = parseFloat(prompt(("Digite o segundo numero: ")))
+            
+        
+             document.write("O resultado é: " + calculadora(numero1, numero2, operacao))
+            
+
+
+
+
+
+
+
+        </script>
+    </head>
+
+    <body>
+
+    </body>
+</html>

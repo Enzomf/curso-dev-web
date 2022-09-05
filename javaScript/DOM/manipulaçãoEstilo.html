@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <script>
+
+        function troca(fundo){
+
+            
+           document.getElementById("cores").style.background = fundo
+
+        }
+
+    </script>
+
+    <style>
+
+        main {
+            width: 250px;
+            border: black solid 1px;
+            padding: 5px;
+        }
+
+        h3 {
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        input {
+            cursor: pointer;
+        }
+        #vermelho {
+            background-color: red;
+            border: red solid 1px;
+            color: white;
+            width: 80px;
+        }
+
+        #verde {
+            background-color: green;
+            border: green solid 1px;
+            color: white;
+            width: 80px;
+        }
+
+        #azul {
+            background-color: blue;
+            border: blue solid 1px;
+            color: white;
+            width: 80px;
+        }
+
+        #cores {
+            width: 240px;
+            height: 150px;
+            border: black solid 1px;
+            margin: 10px auto;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h3>Manipulando Estilos</h3>
+
+        <input type="button" id="vermelho"  value="vermelho" onclick=" troca('red')">
+        <input type="button" id="verde" value="verde" onclick=" troca('green')">
+        <input type="button" id="azul" value="azul" onclick=" troca('blue')">
+
+        <div id ="cores">
+
+        </div>
+    </main>
+</body>
+
+</html>
